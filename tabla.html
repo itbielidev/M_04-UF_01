@@ -1,64 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla</title>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+td, th {
+    padding: 15px;
+}
+    </style>
 </head>
 <body>
     <h2>Análisis de ventas anuales</h2>
 
-    <table>
-        <tr>
-        <td>AÑO</td>
-        <td>Producto A</td>
-        <td>Producto B</td>
-        <td>Producto C</td>
-        <td>Producto D</td>
-        </tr>
-        <tr>
-            <td>N-3</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>N-2</td>
-            <td>3</td>
-            <td>5</td>
-            <td>8</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>N-1</td>
-            <td>4</td>
-            <td>4</td>
-            <td>7</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>N</td>
-            <td>5</td>
-            <td>7</td>
-            <td>6</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>AÑO</td>
-            <td>PRODUCTO </td>
-            <td>PRODUCTO B</td>
-            <td>PRODUCTO C</td>
-            <td>PRODUCTO d</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td colspan>Expansión de ventas</td>
-            <td>5</td>
-            <td>8</td>
-            <td>4</td>
-        </tr>
+    <table >
+        <thead>
+            <tr>
+                <th rowspan="2">AÑO</th>
+                <th colspan="4">Espansión de ventas</th>
+            </tr>
+            <tr>
+                <th>Producto A</th>
+                <th>Producto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>N-3</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>N-2</td>
+                <td>3</td>
+                <td>5</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>N-1</td>
+                <td>4</td>
+                <td>4</td>
+                <td>7</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="2">AÑO</th>
+                <th>Producto A</th>
+                <th>Producto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+            <tr>
+                <th colspan="5">Espansión de ventas</th>
+            </tr>
+        </tfoot>
+        
+        
+        
     </table>
     
 </body>
